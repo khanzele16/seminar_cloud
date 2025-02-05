@@ -54,6 +54,12 @@ const App: React.FC = () => {
               return <SeminarItem {...seminar} key={seminar.id} />;
             else return <SeminarEdit {...seminar} key={seminar.id} />;
           })}
+        {
+          status === 'error' &&
+          <div className="App-error">
+            <h2>Произошла ошибка!</h2>
+          </div>
+        }
       </ul>
     </div>
   );
