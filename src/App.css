@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  grid-row-gap: 25px;
+  margin: 25px 0;
+}
+.App h1 {
+  font-size: 40px;
+}
+.App-seminars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+@media (max-width: 1650px) {
+  .App-seminars {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+@media (max-width: 950px) {
+  .App h1 {
+    font-size: 30px;
+  }
+}

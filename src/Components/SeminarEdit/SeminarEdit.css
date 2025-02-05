@@ -1,0 +1,160 @@
+.EditSeminar {
+  display: grid;
+  grid-template-columns: 1fr; /* Устанавливаем один столбец */
+  grid-row-gap: 10px;
+  border: 1px solid #dce3eb;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.EditSeminar input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+}
+.EditSeminar:hover {
+  box-shadow: 0 4px 5px 1px #0000000e;
+  border: 1px solid #cfd6de;
+  transform: translateY(-2px);
+}
+.EditSeminar-info #seminar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+.EditSeminar-info #seminar-description {
+  font-size: 16px;
+  color: #333333;
+}
+.EditSeminar-info {
+  display: grid;
+  grid-row-gap: 5px;
+}
+.EditSeminar #seminar-time {
+  justify-self: end; /* Выравнивание по правому краю */
+  color: #333333;
+  font-size: 14px;
+}
+.EditSeminar-bottom-options {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.EditSeminar #button-save {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  outline: 0;
+  padding: 5px 10px;
+  text-align: center;
+  transform: translateY(0);
+  transition: all 0.15s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.EditSeminar #button-save:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+.EditSeminar #button-remove {
+  background-color: #aa1313;
+  border: 1px solid #aa1313;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  outline: 0;
+  padding: 5px 10px;
+  text-align: center;
+  transform: translateY(0);
+  transition: all 0.15s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.EditSeminar #button-remove:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+@media (min-width: 768px) {
+  .EditSeminar #button-save {
+    padding: 10px 30px;
+  }
+  .EditSeminar #button-remove {
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 1650px) {
+  .EditSeminar {
+    width: 1200px;
+  }
+}
+@media (max-width: 1300px) {
+  .EditSeminar {
+    width: 900px;
+  }
+}
+@media (max-width: 950px) {
+  .EditSeminar {
+    width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .EditSeminar {
+    width: 500px;
+    padding: 10px;
+  }
+  .EditSeminar-info #seminar-title {
+    font-size: 20px;
+  }
+  .EditSeminar-info #seminar-description {
+    font-size: 14px;
+  }
+  .EditSeminar #seminar-time {
+    font-size: 12px;
+  }
+}
+@media (max-width: 550px) {
+  .EditSeminar {
+    width: 400px;
+    padding: 6px 10px;
+  }
+  .EditSeminar-info {
+    grid-row-gap: 2px;
+  }
+  .EditSeminar-info #seminar-title {
+    font-size: 18px;
+  }
+  .EditSeminar-info #seminar-description {
+    font-size: 12px;
+  }
+  .EditSeminar #seminar-time {
+    font-size: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .EditSeminar {
+    width: 300px;
+    padding: 6px 10px;
+  }
+  .EditSeminar-info {
+    grid-row-gap: 2px;
+  }
+  .EditSeminar-info #seminar-title {
+    font-size: 18px;
+  }
+  .EditSeminar-info #seminar-description {
+    font-size: 12px;
+  }
+  .EditSeminar #seminar-time {
+    font-size: 10px;
+  }
+}

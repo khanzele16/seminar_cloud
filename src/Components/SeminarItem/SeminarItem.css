@@ -1,0 +1,123 @@
+.Seminar {
+  display: grid;
+  grid-template-columns: 1fr; /* Устанавливаем один столбец */
+  grid-row-gap: 10px;
+  border: 1px solid #dce3eb;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.Seminar:hover {
+  box-shadow: 0 4px 5px 1px #0000000e;
+  border: 1px solid #cfd6de;
+  transform: translateY(-2px);
+}
+.Seminar-info {
+  display: grid;
+  grid-row-gap: 5px;
+}
+.Seminar-info-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Seminar-info-top-options {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 10px;
+}
+.Seminar-info-top-options svg {
+  color: #7e7e7e;
+  transition: all 0.2s ease;
+}
+.Seminar-info-top-options svg:hover {
+  color: #333333;
+}
+.Seminar-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+.Seminar-info p {
+  font-size: 16px;
+  color: #333333;
+}
+.Seminar #seminar-time {
+  justify-self: end; /* Выравнивание по правому краю */
+  color: #333333;
+  font-size: 14px;
+}
+
+@media (max-width: 1650px) {
+  .Seminar {
+    width: 1200px;
+  }
+}
+@media (max-width: 1300px) {
+  .Seminar {
+    width: 900px;
+  }
+}
+@media (max-width: 950px) {
+  .Seminar {
+    width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .Seminar {
+    width: 500px;
+    padding: 10px;
+  }
+  .Seminar-info-top-options {
+    grid-column-gap: 6px;
+  }
+  .Seminar-info-top-options svg {
+    width: 15px;
+  }
+  .Seminar-info h2 {
+    font-size: 20px;
+  }
+  .Seminar-info p {
+    font-size: 14px;
+  }
+  .Seminar #seminar-time {
+    font-size: 12px;
+  }
+}
+@media (max-width: 550px) {
+  .Seminar {
+    width: 400px;
+    padding: 6px 10px;
+  }
+  .Seminar-info {
+    grid-row-gap: 2px;
+  }
+  .Seminar-info h2 {
+    font-size: 18px;
+  }
+  .Seminar-info p {
+    font-size: 12px;
+  }
+  .Seminar #seminar-time {
+    font-size: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .Seminar {
+    width: 300px;
+    padding: 6px 10px;
+  }
+  .Seminar-info {
+    grid-row-gap: 2px;
+  }
+  .Seminar-info h2 {
+    font-size: 18px;
+  }
+  .Seminar-info p {
+    font-size: 12px;
+  }
+  .Seminar #seminar-time {
+    font-size: 10px;
+  }
+}
